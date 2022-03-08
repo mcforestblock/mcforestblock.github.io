@@ -1,0 +1,44 @@
+
+header div{
+    display: flex;
+    margin-top: 1%;
+}
+.navbg{
+    position: absolute;
+    overflow: visible;
+    
+}
+#navbg {
+    fill: #ffffff;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+header #navbar nav{
+    flex:1; 
+    position: absolute;
+    left: 140px;
+    top: 47px;
+    font-size:30px;
+    
+}
+.logo{
+    position: absolute;
+	overflow: visible;
+    margin-top: 52px;
+    margin-left:55px;
+}
+header #navbar nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+header #navbar nav ul li{
+    display: inline-block;
+    
+} header #navbar nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding-top:38px;padding-right:30px;padding-bottom:38px;padding-left:30px;
+    font-family: minecraft;
+}
