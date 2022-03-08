@@ -3,37 +3,38 @@ body {
 }
 header div{
     display: flex;
-    margin-top: 1%;
+    justify-content: center;
 }
 .navbg{
     position: absolute;
     overflow: visible;
-    
 }
-#navbg {
+.navbg {
     fill: #ffffff;
-    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-}
-header #navbar nav{
-    flex:1; 
-    position: absolute;
-    left: 140px;
-    top: 54px;
-    font-size:30px;
-    
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161))
 }
 .logo{
     position: absolute;
-	overflow: visible;
     margin-top: 52px;
-    margin-left:55px;
+    margin-right: 700px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex:0.2
 }
+header #navbar nav{
+    position: absolute;
+    margin-top: 35px;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 header #navbar nav ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    
-    
+    padding: 0;    
 }
 header #navbar nav ul li{
     display: inline-block;
@@ -42,5 +43,9 @@ header #navbar nav ul li{
     display: inline-block;
     text-decoration: none;
     padding-top:38px;padding-right:30px;padding-bottom:38px;padding-left:30px;
-    
+    color: #b4b4b4;   
+}
+header #navbar nav ul li #button-selected {
+    color: #35e164;
+    border-bottom: 35px;
 }
