@@ -4,6 +4,7 @@ body {
 header div{
     display: flex;
     justify-content: center;
+    
 }
 .navbg{
     position: absolute;
@@ -11,16 +12,17 @@ header div{
 }
 .navbg {
     fill: #ffffff;
-    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161))
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+header #navbar div{
+    display: inline-flex;
 }
 .logo{
     position: absolute;
-    margin-top: 52px;
-    margin-right: 700px;
-    margin-left: 10px;
     display: flex;
     justify-content: center;
-    flex:0.2
+    flex:0.2;
+    filter: drop-shadow(0px -5px 6px rgba(0, 0, 0, 0.161));
 }
 header #navbar nav{
     position: absolute;
