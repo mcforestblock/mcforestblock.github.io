@@ -51,3 +51,9 @@ header #navbar nav ul li #button-selected {
     color: #35e164;
     border-bottom: 35px;
 }
+header #background {
+    margin-top: 145px;
+    margin-left:520px;
+    background-image:url('images/banners/serverinvite.png'); 
+    width:830px; height:250px; 
+}
