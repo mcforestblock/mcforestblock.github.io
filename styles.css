@@ -1,10 +1,32 @@
 body {
     font-family: minecraft;
+    scroll-behavior:smooth;
+    text-rendering:optimizeSpeed;
+    line-height:1.5;
+    background-color: #fafafa;
 }
 header div{
     display: flex;
+    justify-content: center;   
+}
+header #background {
+    background-image:url('images/banners/serverinvite.png'); 
+    width:830px; height:250px; 
+    position: absolute;
+    background-position: 16550px;
+    text-align: center;
+    align-items: center;
     justify-content: center;
-    
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.37);
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.267));
+    border-radius: 0px 0px 38px 38px;
+    margin-top: 146px;
+} header #headertext{
+    color: #35e164;
+} header #headertext2{
+    color: #ffffff;
 }
 .navbg{
     position: absolute;
@@ -50,10 +72,4 @@ header #navbar nav ul li{
 header #navbar nav ul li #button-selected {
     color: #35e164;
     border-bottom: 35px;
-}
-header #background {
-    margin-top: 145px;
-    margin-left:520px;
-    background-image:url('images/banners/serverinvite.png'); 
-    width:830px; height:250px; 
 }
