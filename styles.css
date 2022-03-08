@@ -1,4 +1,6 @@
-
+body {
+    font-family: minecraft;
+}
 header div{
     display: flex;
     margin-top: 1%;
@@ -16,7 +18,7 @@ header #navbar nav{
     flex:1; 
     position: absolute;
     left: 140px;
-    top: 47px;
+    top: 54px;
     font-size:30px;
     
 }
@@ -40,5 +42,5 @@ header #navbar nav ul li{
     display: inline-block;
     text-decoration: none;
     padding-top:38px;padding-right:30px;padding-bottom:38px;padding-left:30px;
-    font-family: minecraft;
+    
 }
