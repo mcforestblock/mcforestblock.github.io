@@ -5,6 +5,41 @@ body {
     line-height:1.5;
     background-color: #fafafa;
 }
+
+#backgroundpath {
+	position: absolute;
+	width: 100%;
+	height: 1947.858px;
+	left: 0px;
+	top: 73.642px;
+	overflow: visible;
+}
+#bgpath1 {
+	fill: rgba(53,225,100,1);
+}
+.bgpath1 {
+	overflow: visible;
+	position: absolute;
+	width: 100%;
+	height: 1947.858px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#bgpath2 {
+	fill: rgba(43,205,116,1);
+}
+.bgpath2 {
+	overflow: visible;
+	position: absolute;
+	width: 100%;
+	height: 1693.82px;
+	left: 0px;
+	top: 254.038px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+
 header div{
     display: flex;
     justify-content: center;   
@@ -44,9 +79,6 @@ header #navbar div{
     display: flex;
     justify-content: center;
     flex:0.2;
-    background-color: #000000;
-    padding: 10px;
-    border-radius: 100%;
 }
 header #navbar nav{
     position: absolute;
@@ -54,7 +86,6 @@ header #navbar nav{
     font-size:30px;
     display: flex;
     justify-content: center;
-    
 }
 
 header #navbar nav ul{
@@ -80,4 +111,16 @@ header #navbar nav ul li #button-selected {
 } .button-unselected:hover {
     background-color: #b4b4b4;
     color: #a3a3a3;
+}
+main .features {
+    position: absolute;
+    margin-top: 600px;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+}
+main .features #features li{
+    display: inline-block;
+    margin:10px 140px;
+    text-align: center;
 }
