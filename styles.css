@@ -120,7 +120,12 @@ main .features {
     justify-content: center;
 }
 main .features #features li{
+    width: 100px;
+    border-radius: 10px;
     display: inline-block;
-    margin:10px 140px;
+    /*margin:10px 140px;*/
     text-align: center;
+}
+main .features #features li #f1{
+    background-image: url(images/shaders/pirateship.png);
 }
