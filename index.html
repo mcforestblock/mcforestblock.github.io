@@ -33,8 +33,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
-    <script src="script.js"></script>
+    
     <body>
+        
+        <div id="preloader">
+
+        </div>
+
         <header>
             <div id="container">
                 <div class="topnav">
@@ -47,7 +52,7 @@
                     <div class="logo"></div>
                 </div>
                 <div class="ip">
-                    <h4>mc.forestblock.net</h4>
+                    <a href="#" onclick="CopyToClipboard('ip');return false;">mc.forestblock.net  <span data-playercounter-ip="forestblock.net">0</span></a>
                 </div>
             </div>
         </header>
@@ -62,14 +67,22 @@
             </div>
         </main>
         <footer>
-            <div>
-                <a href="https://discords.com/servers/forestblock"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://www.instagram.com/forestblocknet/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/forestblocknet"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.reddit.com/r/Forestblock/"><i class="fa-brands fa-reddit"></i></a>
+            <div id="footer">
+                <div id="top">
+                    <div class="ip">
+                        <a id="ip" href="#" onclick="CopyToClipboard('ip');return false;">mc.forestblock.net <span data-playercounter-ip="forestblock.net">0</span></a> 
+                    </div>
+                    <a href="https://discords.com/servers/forestblock"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.instagram.com/forestblocknet/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/forestblocknet"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.reddit.com/r/Forestblock/"><i class="fa-brands fa-reddit"></i></a>
+                </div>
                 <h4>Forestblock, <a href="https://cloaksplus.com/">A Cloaks+ Project</a></h4>
                 <h4>We are not affiliated with or endorsed by Mojang, AB</h4>
             </div>
         </footer>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
     </body>
 </html>
