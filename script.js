@@ -12,9 +12,11 @@ var r = document.createRange();
     window.getSelection().removeAllRanges();
 }
 
-new PlayerCounter({
-    element: element,
-    ip: 'server ip',
-    format: '{online}/{max}', // default {online}
-    refreshRate: 60 * 1000 // default 1m
-  });
+function navion() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }

@@ -42,11 +42,21 @@
 
         <header>
             <div id="container">
-                <div class="topnav">
-                        <a id="home" href="#"><i class="fa-solid fa-house"></i> home</a>
-                        <a id="about" href="#"><i class="fa-solid fa-signs-post"></i> about</a>
-                        <a id="shop" href="#"><i class="fa-solid fa-cart-shopping"></i> shop</a>
-                        <a id="map" href="#"><i class="fa-solid fa-map"></i> map</a>
+                <div class="topnav" id="myTopnav">
+                        <input type="checkbox" id="check">
+                        <label  for="check" class="menu" id="menu" onclick="naviconanimation(this)">
+                            <div>
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                            </div>
+                        </label>
+                        <div id="menuicons">
+                            <a id="home" href="#"><i class="fa-solid fa-house"></i> home</a>
+                            <a id="about" href="#"><i class="fa-solid fa-signs-post"></i> about</a>
+                            <a id="shop" href="#"><i class="fa-solid fa-cart-shopping"></i> shop</a>
+                            <a id="map" href="#"><i class="fa-solid fa-map"></i> map</a>
+                        </div>
                     </div>
                 <div class="header">
                     <div class="logo"></div>
@@ -72,16 +82,25 @@
                     <div class="ip">
                         <a id="ip" href="#" onclick="CopyToClipboard('ip');return false;">mc.forestblock.net </a><span data-playercounter-ip="forestblock.net">0</span>
                     </div>
-                    <a href="https://discords.com/servers/forestblock"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://www.instagram.com/forestblocknet/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com/forestblocknet"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.reddit.com/r/Forestblock/"><i class="fa-brands fa-reddit"></i></a>
+                    <div id="socials">
+                        <a href="https://discords.com/servers/forestblock"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/forestblocknet/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/forestblocknet"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.reddit.com/r/Forestblock/"><i class="fa-brands fa-reddit"></i></a>
+                    </div>
                 </div>
-                <h4>Forestblock, <a href="https://cloaksplus.com/">A Cloaks+ Project</a></h4>
-                <h4>We are not affiliated with or endorsed by Mojang, AB</h4>
+                <div id="bottom">
+                    <h4>Forestblock, <a href="https://cloaksplus.com/">A Cloaks+ Project</a></h4>
+                    <h4>We are not affiliated with or endorsed by Mojang, AB</h4>
+                </div>  
             </div>
         </footer>
-
+        <script>
+            var menu = document.getElementById("menu")
+            menu.onclick = function() {
+                menu.classList.toggle("openmenu")
+            }
+        </script>
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
     </body>
