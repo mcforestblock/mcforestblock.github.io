@@ -1,24 +1,59 @@
-body {
+body, html {
+    font-family: 'Oswald', sans-serif;
     scroll-behavior:smooth;
     text-rendering:optimizeSpeed;
-    line-height:1.5;
-    background-color: #fafafa;
-}
-#navbar .buttons{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 5;
+    height: 100%;
     margin: 0;
 }
 
-#navbar ul{
-    list-style-type: none;
-    overflow: hidden;
+#container{
+  justify-content: center;
+  padding: 50px 50%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/shaders/farm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
 }
-#navbar li{
-    float: left;
-    margin: 0px 30px;
-    padding: 10px 30px;
-    background-color: blue;
+#container .header{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#container .header div.logo:before{
+  content: url(images/logo/giantlogo.png);
+  
+}
+#container .topnav{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#container .topnav a{
+  display: flex;
+  justify-items: center;
+  margin: 0px 10px;
+  padding: 12px 20px;
+  color:white;
+  text-decoration: none;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:20px;
+}
+#home{
+  background-color: #00b34a;
+  border-width: 20px;
+  border-color: #2eff8594;
+}
+#about:hover{
+  background-color: #ff3939;
+}
+#shop:hover{
+  background-color: #399fff;
+}
+#map:hover{
+  background-color: #ffba39;
 }

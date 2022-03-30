@@ -16,29 +16,38 @@
         <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
-        <title>Forestblock.net</title>
+        <title>Welcome to Forestblock</title>
+        <meta content="Welcome to Forestblock<" property="og:title" />
+        <meta content="The Hardest RPG Server" property="og:description" />
+        <meta content="https://forestblock.net" property="og:url" />
+        <meta content="images/banners/serverinvite.png" property="og:image" />
+        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+
         <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
         <link rel="stylesheet" type="text/css" id="fontsStylesheet" href="fonts/fonts.css"/>
         <meta name="Forestblock WebPage" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="">
         <script src="https://kit.fontawesome.com/0f2bdeb886.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <script src="script.js"></script>
     <body>
         <header>
-            <div id="navbar">
-                <div id="buttons">
-                    <ul id="buttons">
-                        <li><a id="button-selected" href="#">home</a></li>
-                        <li><a class="button-unselected" href="#">about</a></li>
-                        <li><a class="button-unselected" href="#">shop</a></li>
-                        <li><a class="button-unselected" href="#">map</a></li>
-                    </ul>
+            <div id="container">
+                <div class="topnav">
+                        <a id="home" href="#"><i class="fa-solid fa-house"></i> home</a>
+                        <a id="about" href="#"><i class="fa-solid fa-signs-post"></i> about</a>
+                        <a id="shop" href="#"><i class="fa-solid fa-cart-shopping"></i> shop</a>
+                        <a id="map" href="#"><i class="fa-solid fa-map"></i> map</a>
+                    </div>
+                <div class="header">
+                    <div class="logo"></div>
                 </div>
-                <div id="background">
-                    <div class="logo"><img src="images/logo/forestblockiconlogo.png" alt="forestlogo"></img></div>
-                    <h1 id="headertext">forestblock</h1><h1 id="headertext2">.net</h1>
+                <div class="ip">
+                    <h4>mc.forestblock.net</h4>
                 </div>
             </div>
         </header>
@@ -61,6 +70,6 @@
                 <h4>Forestblock, <a href="https://cloaksplus.com/">A Cloaks+ Project</a></h4>
                 <h4>We are not affiliated with or endorsed by Mojang, AB</h4>
             </div>
-        </footer>        
+        </footer>
     </body>
 </html>
