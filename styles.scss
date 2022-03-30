@@ -23,8 +23,10 @@ body, html {
   width:50px;
   margin:8px;
   cursor:pointer;
-  left: 0px;
+  left: 10px;
   margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  padding:10px 3px 20px 0px;
   div{
     width:40;
     height:60;
@@ -39,7 +41,7 @@ body, html {
       display: block;
       position: absolute;
       top:50%;
-      left:50%;
+      
       transition:0.5s;
     } 
   }
@@ -135,15 +137,25 @@ body, html {
     display: block;
     position:absolute;
   }
+  #container{
+    height: 10%;
+    padding: 0px 5px 50px 50px;
+  }
+  #container .header{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
   #container .topnav  #menuicons{
     display: none;
     flex-direction: column;
     position: absolute;
-    width:100%;
-    padding:10px ;
+    width:90%;
+    padding:1px ;
     background-color: #706e6eb9;
     transition: all 0.5s;
     margin-top: 90px;
+    margin-right: 50px;
     a{
       margin: 10px;
       text-align: center;
