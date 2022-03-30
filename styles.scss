@@ -1,0 +1,144 @@
+$fbgreen: #35E164;
+$fbgreendark: #2BCD74;
+
+
+body, html {
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior:smooth;
+    text-rendering:optimizeSpeed;
+    height: 100%;
+    margin: 0;
+}
+
+#preloader{
+  background: #000000 url(images/logo/loading.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position:absolute;
+  z-index: 100;
+}
+
+#container{
+  padding: 50px 50%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/shaders/farm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+}
+#container .header{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#container .header div.logo:before{
+  content: url(images/logo/giantlogo.png);
+}
+#container .topnav{
+  display: flex;
+  justify-content: center;
+}
+
+#container .topnav a{
+  display: flex;
+  justify-items: center;
+  margin: 0px 10px;
+  padding: 12px 20px;
+  color:white;
+  text-decoration: none;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:20px;
+  
+}
+#home{
+  background-color: #00b34a;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2eff8594;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+}
+#about:hover{
+  background-color: #ff3939;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff535394;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+#shop:hover{
+  background-color: #399fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #53acff94;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+#map:hover{
+  background-color: #ffba39;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffc65c94;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+
+.ip2{
+    margin:0;
+    display: flex;
+    justify-content: center;
+  }
+  .ip2 a{
+    background-color: $fbgreen;
+    color:white;
+    padding: 5px 30px;
+    border-color: $fbgreen;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0px 4px #2BCD74;
+    text-decoration: none;
+
+    font-weight: 500;
+    text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+  
+  }
+  .ip2 span{
+    background-color: $fbgreendark;
+    color:white;
+    padding: 5px 30px;
+    border-color: $fbgreendark;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+    box-shadow: 0px 4px #2bcd61;
+    text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+.ip{
+  margin:0 10px;
+}
+.ip a{
+  background-color: #2BCD74;
+  color:#1d9e48;
+  padding: 5px 30px;
+  text-decoration: none;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.ip span{
+  background-color: #2bcd61;
+  color:#188f40;
+  padding: 5px 30px;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer top{
+    padding: 50px 50%;
+}
