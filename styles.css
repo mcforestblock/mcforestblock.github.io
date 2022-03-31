@@ -4,6 +4,8 @@ body, html {
   text-rendering: optimizeSpeed;
   height: 100%;
   margin: 0;
+  background-color: #000000;
+  color: white;
 }
 
 #preloader {
@@ -265,25 +267,37 @@ body, html {
 }
 
 .ip a {
-  background-color: #2BCD74;
-  color: #1d9e48;
+  background-color: #29af66;
+  color: #1b7242;
   padding: 5px 30px;
   text-decoration: none;
   text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .ip span {
-  background-color: #2bcd61;
-  color: #188f40;
+  background-color: #45b477;
+  color: #298f57;
   padding: 5px 30px;
   text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-footer {
+footer #footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 50px;
+}
+
+footer #footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,30 +307,71 @@ footer {
           flex-direction: column;
 }
 
-footer #top {
-  background-color: #157936;
+footer #footer .container #top {
+  background-color: #2BCD74;
+  padding: 30px 50% 30px 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  overflow: hidden;
-  padding: 10px 0px;
-}
-
-footer #top .ip {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   float: left;
 }
 
-footer #top #socials {
-  float: right;
-  margin-left: 20%;
-  margin-right: 1%;
+footer #footer .container #top .ip {
+  float: left;
 }
 
-footer #top #socials a {
-  text-decoration: none;
-  color: white;
+footer #footer .container #top #socials {
+  float: right;
+}
+
+footer #footer .container #top #socials a {
+  color: #1b7242;
+  padding: 0px 15px;
+}
+
+footer #footer .container #top #socials a i {
+  font-size: 20px;
+}
+
+footer #footer .container #top #socials a:hover {
+  color: #29af66;
+}
+
+footer #footer .container #bottom {
+  background-color: #35E164;
+  padding-left: 110px;
+}
+
+footer #footer .container #bottom h4 {
+  font-weight: 400;
+  line-height: 5px;
+  -moz-tab-size: 110;
+    -o-tab-size: 110;
+       tab-size: 110;
+}
+
+footer #footer .container #bottom #foot1 {
+  color: #000000;
+  opacity: .8;
+}
+
+footer #footer .container #bottom #foot1 a {
+  color: #000000;
+}
+
+footer #footer .container #bottom #foot2 {
+  color: #16612f;
+}
+
+footer #footer #cloaksplus {
+  position: absolute;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
