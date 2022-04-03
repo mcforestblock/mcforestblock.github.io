@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Minecraft-Overviewer 0.17.47 (7171af5)" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <script type="text/javascript" src="overviewerConfig.js"></script>
+    <script type="text/javascript" src="overviewer.js"></script>
+    <script type="text/javascript" src="baseMarkers.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Welcome to Forestblock</title>
+    <meta content="Forestblock Map" property="og:title" />
+    <meta content="Online Map" property="og:description" />
+    <meta content="https://forestblock.net" property="og:url" />
+    <meta content="images/banners/serverinvite.png" property="og:image" />
+    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+
+    <link rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
+    <link rel="stylesheet" href="overviewer.css" type="text/css" />
+
+    <script src="https://kit.fontawesome.com/0f2bdeb886.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- Generated at: Sat, 02 Apr 2022 17:06:04 Mountain Daylight Time -->
+  <body onload="overviewer.util.initialize()">
+    <div id="container">
+      <div class="topnav" id="myTopnav">
+          <input type="checkbox" id="check">
+          <label  for="check" class="menu" id="menu" onclick="naviconanimation(this)">
+              <div>
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+                  <span class="bar3"></span>
+              </div>
+          </label>
+          <div id="menuicons">
+              <a id="home" href="../index.html"><i class="fa-solid fa-house"></i> home</a>
+              <a id="about" href="#"><i class="fa-solid fa-signs-post"></i> about</a>
+              <a id="shop" href="#"><i class="fa-solid fa-cart-shopping"></i> shop</a>
+              <a id="map" href="../map/mainland.html"><i class="fa-solid fa-map"></i> map</a>
+          </div>
+      </div>
+  </div>
+  <script>
+    var menu = document.getElementById("menu")
+    menu.onclick = function() {
+        menu.classList.toggle("openmenu")
+    }
+  </script>
+    <noscript style="color: white; background-color: rgb(43, 255, 131)">
+      If you can see this message, there is likely a problem loading the
+      Overviewer JavaScript components. Check the JavaScript console for error
+      messages.
+    </noscript>
+    <div id="mcmap"></div>
+  </body>
+</html>
