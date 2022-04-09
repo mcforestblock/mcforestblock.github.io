@@ -1,7 +1,6 @@
 $fbgreen: #35E164;
 $fbgreendark: #2BCD74;
 
-
 body, html {
     font-family: 'Oswald', sans-serif;
     scroll-behavior:smooth;
@@ -15,8 +14,7 @@ body, html {
 #preloader{
   background: #000000 url(images/logo/loading.gif) no-repeat center center;
   background-size: 30%;
-  height: 100vh;
-  width: 100%;
+  height: 100%;
   position:absolute;
   z-index: 100;
 }
@@ -60,7 +58,7 @@ body, html {
   .bar3 {transform: translate(0px, -10%) rotate(45deg); box-shadow: 0px 0px rgba(0, 0, 0, 0.5);}
   .bar2 {width:0;}
 }
-#container{
+.container-fluid, #header-container{
   padding: 50px 50%;
   display: flex;
   flex-direction: column;
@@ -68,99 +66,95 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   height: 50%;
-}
-#container .header{
-  display: flex;
   justify-content: center;
-  margin-top: 50px;
-}
-#container .header div.logo:before{
-  content: url(images/logo/giantlogo.png);
-}
-#container .topnav{
-  display: flex;
-  justify-content: center;
-}
-
-#container .topnav  div {
-  display: flex;
-  a{
+  .header{
+    margin-top: 30px;
+  }
+  .topnav{
     display: flex;
-    justify-items: center;
-    margin: 0px 10px;
-    padding: 12px 20px;
-    color:white;
-    text-decoration: none;
-    text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size:20px;
-    transition: 0.5s;
+    justify-content: center;
+    div {
+      display: flex;
+      a{
+        display: flex;
+        justify-items: center;
+        margin: 0px 10px;
+        padding: 12px 20px;
+        color:white;
+        text-decoration: none;
+        text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size:20px;
+        transition: 0.5s;
+      }
+      #home{
+        background-color: #00b34a;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #2eff8594;
+        box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+      }
+      #about:hover{
+        background-color: #ff3939;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ff535394;
+        box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+      }
+      #shop:hover{
+        background-color: #399fff;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #53acff94;
+        box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+      }
+      #map:hover{
+        background-color: #ffba39;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ffc65c94;
+        box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+      }
+    }
+    input{
+      display: none;
+    }
+    .menu{
+      display: none;
+    }
   }
 }
-#home{
-  background-color: #00b34a;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #2eff8594;
-  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
 
-}
-#about:hover{
-  background-color: #ff3939;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ff535394;
-  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-}
-#shop:hover{
-  background-color: #399fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #53acff94;
-  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-}
-#map:hover{
-  background-color: #ffba39;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ffc65c94;
-  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-}
-.menu{
-  display: none;
-}
-#container .topnav input{
-  display: none;
-}
+
 
 @media screen and (max-width:630px){
   .menu{
     display: block;
     position:absolute;
   }
-  #container{
+  .container-fluid #header-container{
     height: 10%;
     padding: 0px 5px 50px 50px;
-  }
-  #container .header{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  #container .topnav  #menuicons{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    width:90%;
-    padding:1px ;
-    background-color: #706e6eb9;
-    transition: all 0.5s;
-    margin-top: 90px;
-    margin-right: 50px;
-    a{
-      margin: 10px;
-      text-align: center;
+    .header{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .topnav #menuicons{
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      width:90%;
+      padding:1px ;
+      background-color: #706e6eb9;
+      transition: all 0.5s;
+      margin-top: 90px;
+      margin-right: 50px;
+      a{
+        margin: 10px;
+        text-align: center;
+      }
     }
   }
   #check:checked ~ #menuicons{
@@ -221,61 +215,4 @@ body, html {
   text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
     font-size: 20px;
     font-weight: 500;
-}
-footer #footer{
-  display: flex;
-  flex-direction:row;
-  width:100%;
-  height:50px;
-  .container{
-    display: flex;
-    flex-direction: column;
-    #top{
-      background-color: $fbgreendark;
-      padding:30px 50% 30px 20%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      float: left;
-      .ip{
-        float:left;
-      }
-      #socials{
-        float: right;
-        a{
-          color: #1b7242;
-          padding: 0px 15px;
-          i{
-            font-size: 20px;
-          }
-        }
-        a:hover{
-          color: #29af66;
-        }
-      }
-    }
-    #bottom{
-      background-color: $fbgreen;
-      padding-left: 110px;
-      h4{
-        font-weight:400;
-        line-height: 5px;
-        tab-size: 110;
-      }
-      #foot1{
-        color: #000000;
-        opacity: .8;
-        a{
-          color: #000000;
-        }
-      }
-      #foot2{
-        color: #16612f;
-      }
-    }
-  }
-  #cloaksplus{
-    position:absolute;
-    margin-top: 50px;
-  }
 }

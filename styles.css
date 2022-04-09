@@ -11,8 +11,7 @@ body, html {
 #preloader {
   background: #000000 url(images/logo/loading.gif) no-repeat center center;
   background-size: 30%;
-  height: 100vh;
-  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 100;
 }
@@ -76,7 +75,7 @@ body, html {
   width: 0;
 }
 
-#container {
+.container-fluid, #header-container {
   padding: 50px 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,23 +88,16 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   height: 50%;
-}
-
-#container .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
 }
 
-#container .header div.logo:before {
-  content: url(images/logo/giantlogo.png);
+.container-fluid .header, #header-container .header {
+  margin-top: 30px;
 }
 
-#container .topnav {
+.container-fluid .topnav, #header-container .topnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,13 +106,13 @@ body, html {
           justify-content: center;
 }
 
-#container .topnav div {
+.container-fluid .topnav div, #header-container .topnav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#container .topnav div a {
+.container-fluid .topnav div a, #header-container .topnav div a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +129,7 @@ body, html {
   transition: 0.5s;
 }
 
-#home {
+.container-fluid .topnav div #home, #header-container .topnav div #home {
   background-color: #00b34a;
   border-width: 1px;
   border-style: solid;
@@ -146,7 +138,7 @@ body, html {
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
 }
 
-#about:hover {
+.container-fluid .topnav div #about:hover, #header-container .topnav div #about:hover {
   background-color: #ff3939;
   border-width: 1px;
   border-style: solid;
@@ -155,7 +147,7 @@ body, html {
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
 }
 
-#shop:hover {
+.container-fluid .topnav div #shop:hover, #header-container .topnav div #shop:hover {
   background-color: #399fff;
   border-width: 1px;
   border-style: solid;
@@ -164,7 +156,7 @@ body, html {
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
 }
 
-#map:hover {
+.container-fluid .topnav div #map:hover, #header-container .topnav div #map:hover {
   background-color: #ffba39;
   border-width: 1px;
   border-style: solid;
@@ -173,11 +165,11 @@ body, html {
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
 }
 
-.menu {
+.container-fluid .topnav input, #header-container .topnav input {
   display: none;
 }
 
-#container .topnav input {
+.container-fluid .topnav .menu, #header-container .topnav .menu {
   display: none;
 }
 
@@ -186,11 +178,11 @@ body, html {
     display: block;
     position: absolute;
   }
-  #container {
+  .container-fluid #header-container {
     height: 10%;
     padding: 0px 5px 50px 50px;
   }
-  #container .header {
+  .container-fluid #header-container .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -199,7 +191,7 @@ body, html {
             justify-content: center;
     margin-top: 10px;
   }
-  #container .topnav #menuicons {
+  .container-fluid #header-container .topnav #menuicons {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -214,7 +206,7 @@ body, html {
     margin-top: 90px;
     margin-right: 50px;
   }
-  #container .topnav #menuicons a {
+  .container-fluid #header-container .topnav #menuicons a {
     margin: 10px;
     text-align: center;
   }
@@ -283,95 +275,5 @@ body, html {
   text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
   font-size: 20px;
   font-weight: 500;
-}
-
-footer #footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  height: 50px;
-}
-
-footer #footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer #footer .container #top {
-  background-color: #2BCD74;
-  padding: 30px 50% 30px 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  float: left;
-}
-
-footer #footer .container #top .ip {
-  float: left;
-}
-
-footer #footer .container #top #socials {
-  float: right;
-}
-
-footer #footer .container #top #socials a {
-  color: #1b7242;
-  padding: 0px 15px;
-}
-
-footer #footer .container #top #socials a i {
-  font-size: 20px;
-}
-
-footer #footer .container #top #socials a:hover {
-  color: #29af66;
-}
-
-footer #footer .container #bottom {
-  background-color: #35E164;
-  padding-left: 110px;
-}
-
-footer #footer .container #bottom h4 {
-  font-weight: 400;
-  line-height: 5px;
-  -moz-tab-size: 110;
-    -o-tab-size: 110;
-       tab-size: 110;
-}
-
-footer #footer .container #bottom #foot1 {
-  color: #000000;
-  opacity: .8;
-}
-
-footer #footer .container #bottom #foot1 a {
-  color: #000000;
-}
-
-footer #footer .container #bottom #foot2 {
-  color: #16612f;
-}
-
-footer #footer #cloaksplus {
-  position: absolute;
-  margin-top: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
