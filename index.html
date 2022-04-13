@@ -23,88 +23,37 @@
         <meta content="images/banners/serverinvite.png" property="og:image" />
         <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 
-        <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" id="fontsStylesheet" href="fonts/fonts.css"/>
+        <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
         <meta name="Forestblock WebPage" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        
         <script src="https://kit.fontawesome.com/0f2bdeb886.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     
     <body>
-        <script src="js/bootstrap.js"></script>
-        <div id="preloader">
+        
+        <div id="preloader"></div>
 
-        </div>
+        <nav class="navbar no-seperate">
+            <div class="container-fluid">
+                <a class="nav-link greenishnav" href="#">home</a>
+                <a class="nav-link redishhover" href="#">about</a>
+                <a class="nav-link blueishhover" href="#">shop</a>
+                <a class="nav-link yellowishhover" href="#">map</a>
+            </div>
+            <div class="co"><img class="moveup" src="images/logo/giantlogo.png" height="100"></div>
+        </nav>
 
-        <header>
-            <div class="container-fluid" id="header-container">
-                <div class="topnav" id="myTopnav">
-                    <input type="checkbox" id="check">
-                    <label  for="check" class="menu" id="menu" onclick="naviconanimation(this)">
-                        <div>
-                            <span class="bar1"></span>
-                            <span class="bar2"></span>
-                            <span class="bar3"></span>
-                        </div>
-                    </label>
-                    <div id="menuicons">
-                        <a id="home" href="index"><i class="fa-solid fa-house"></i> home</a>
-                        <a id="about" href="#"><i class="fa-solid fa-signs-post"></i> about</a>
-                        <a id="shop" href="#"><i class="fa-solid fa-cart-shopping"></i> shop</a>
-                        <a id="map" href="map/mainland"><i class="fa-solid fa-map"></i> map</a>
-                    </div>
-                </div>
-                <div class="header">
-                    <img src="images/logo/giantlogo.png" alt="server's logo" width="400px">
-                </div>
-                <div class="ip2">
-                    <a href="#" onclick="CopyToClipboard('ip');return false;">mc.forestblock.net  </a><span data-playercounter-ip="forestblock.net">0</span>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="features">
-                <ul id="features">
-                    <li><a id="f1">custom</br>bosses</a></li>
-                    <li><a id="f2">custom</br>map</a></li>
-                    <li><a id="f3">fighting</br>styles</a></li>
-                    <li><a id="f4">multi</br>version</a></li>
-                </ul>
-            </div>
-        </main>
-        <footer>
-            <div id="footer">
-                <a id="cloaksplus" href="https://cloaksplus.com/"><img src="images/logo/cloaksplus_logo.png" height="100px"></a>
-                <div class="container-fluid">
-                    <div id="top">
-                        <div class="ip">
-                            <a id="ip" href="#" onclick="CopyToClipboard('ip');return false;">mc.forestblock.net </a><span data-playercounter-ip="forestblock.net">0</span>
-                        </div>
-                        <div id="socials" style="float: right;">
-                            <a href="https://discords.com/servers/forestblock"><i class="fa-brands fa-discord"></i></a>
-                            <a href="https://www.instagram.com/forestblocknet/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://twitter.com/forestblocknet"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.reddit.com/r/Forestblock/"><i class="fa-brands fa-reddit"></i></a>
-                        </div>
-                    </div>
-                    <div id="bottom">
-                        <h4 id="foot1">Forestblock, <a href="https://cloaksplus.com/">A Cloaks+ Project</a></h4>
-                        <h4 id="foot2">We are not affiliated with or endorsed by Mojang, AB</h4>
-                    </div> 
-                </div>
-                 
-            </div>
-        </footer>
+
         <script>
             var menu = document.getElementById("menu")
             menu.onclick = function() {
                 menu.classList.toggle("openmenu")
             }
         </script>
+        <script src="js/bootstrap.js"></script>
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
     </body>

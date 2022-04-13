@@ -1,24 +1,36 @@
 @font-face{
-    src: url(MinecraftRegular-Bmg3.otf);
-    font-family: minecraft;
-    font-weight: normal; 
+    src: url("Oswald-Regular.ttf");
+    font-family: oswald;
     font-style: normal;
+    font-weight: 400;
 }
 @font-face{
-    src: url(MinecraftBold-nMK1.otf);
-    font-family: minecraft;
-    font-weight:bold; 
+    src: url("Oswald-ExtraLight.ttf");
+    font-family: oswald;
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face{
+    src: url("Oswald-Light.ttf");
+    font-family: oswald;
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face{
+    src: url("Oswald-Medium.ttf");
+    font-family: oswald;
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face{
+    src: url("Oswald-SemiBold.ttf");
+    font-family: oswald;
     font-style:normal;
+    font-weight: 600;
 }
 @font-face{
-    src: url(MinecraftItalic-R8Mo.otf);
-    font-family: minecraft;
-    font-weight:normal; 
-    font-style:italic;
-}
-@font-face{
-    src: url(MinecraftBoldItalic-1y1e.otf);
-    font-family: minecraft;
-    font-weight:bold; 
-    font-style:italic;
+    src: url("Oswald-Bold.ttf");
+    font-family: oswald;
+    font-style: normal;
+    font-weight: 700;
 }

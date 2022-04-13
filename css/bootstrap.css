@@ -3919,10 +3919,14 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #0d6efd;
+  display: flex;
+  padding: 12px 20px;
+  color:white;
   text-decoration: none;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight:500;
+  font-size:20px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3931,8 +3935,66 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #fff;
 }
+.redishhover:hover, .redishhover:focus{
+  background-color: #ff3939;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff535394;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+.blueishhover:hover, .blueishhover:focus{
+  background-color: #399fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #53acff94;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+.yellowishhover:hover, .yellowishhover:focus{
+  background-color: #ffba39;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffc65c94;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+.greenishhover:hover, .greenishhover:focus{
+  background-color: #00b34a;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2eff8594;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+
+.redishnav{
+  background-color: #ff3939;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff535394;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+.blueishnav{
+  background-color: #399fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #53acff94;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+.yellowishnav{
+  background-color: #ffba39;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffc65c94;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+.greenishnav{
+  background-color: #00b34a;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2eff8594;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+}
+
 .nav-link.disabled {
   color: #6c757d;
   pointer-events: none;
@@ -4025,7 +4087,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .navbar-brand {
   padding-top: 0.3125rem;
@@ -4038,9 +4100,9 @@ textarea.form-control-lg {
 .navbar-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+align-items: flex-end;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
