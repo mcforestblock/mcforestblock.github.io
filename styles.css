@@ -1,3 +1,7 @@
+#serverip {
+  display: none;
+}
+
 .bg-darkgreen {
   background-color: #2BCD74;
 }
@@ -7,7 +11,7 @@
 }
 
 body, html {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Open Sans";
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   height: 100%;
@@ -42,6 +46,7 @@ nav div {
 
 nav div a {
   color: #ffffff;
+  font-weight: 900;
 }
 
 @media (min-width: 576px) {
@@ -99,7 +104,40 @@ nav div a {
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
-  padding: 10px 1000px;
+}
+
+.footer .topfooter .ip #ip {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 30px;
+}
+
+.footer .topfooter .ip #ip h6 {
+  background-color: #3DB974;
+  padding: 10px 30px;
+  color: #359E64;
+}
+
+.footer .topfooter .ip #ip span {
+  color: #3DB974;
+  background-color: #60DA97;
+  padding: 10px 10px;
+}
+
+.footer .topfooter .footericons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .footer .topfooter .footericons a {
@@ -160,6 +198,12 @@ nav div a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer .bottomfooter #foot1 {
+    font-weight: 200;
+  }
+  .footer .bottomfooter #foot2 {
+    font-weight: 200;
   }
 }
 /*# sourceMappingURL=styles.css.map */

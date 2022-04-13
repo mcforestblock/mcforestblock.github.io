@@ -3,6 +3,10 @@ $fbgreendark: #2BCD74;
 $black: #000000;
 $white: #ffffff;
 
+#serverip{
+  display: none;
+}
+
 .bg-darkgreen{
   background-color:#2BCD74;
 }
@@ -11,7 +15,7 @@ $white: #ffffff;
 }
 
 body, html {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Open Sans";
     scroll-behavior:smooth;
     text-rendering:optimizeSpeed;
     height: 100%;
@@ -36,6 +40,7 @@ nav{
     padding: 30px;
     a {
       color: $white;
+      font-weight: 900;
     }
   }
 
@@ -71,8 +76,28 @@ nav{
     flex-direction: row;
     display: flex;
     justify-content: space-between !important;
-    padding: 10px 1000px;
+    .ip{
+      #ip{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 30px;
+        h6{
+          background-color: #3DB974;
+          padding: 10px 30px;
+          color: #359E64;
+        }
+        span{
+          color: #3DB974;
+          background-color: #60DA97;
+          padding: 10px 10px
+        }
+      }
+      
+    }
     .footericons{
+      display: flex;
+      flex-direction: row;
       a{
         color: #209A57;
         font-size: 20px;
@@ -111,6 +136,12 @@ nav{
     .bottomfooter{
       display: flex;
       flex-direction: column;
+      #foot1{
+        font-weight: 200;
+      }
+      #foot2{
+        font-weight: 200;
+      }
     }
   }
 }

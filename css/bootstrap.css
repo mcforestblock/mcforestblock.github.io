@@ -51,9 +51,6 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
@@ -73,9 +70,6 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
@@ -246,7 +240,6 @@ pre,
 code,
 kbd,
 samp {
-  font-family: var(--bs-font-monospace);
   font-size: 1em;
   direction: ltr /* rtl:ignore */;
   unicode-bidi: bidi-override;
@@ -342,7 +335,6 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
@@ -3943,6 +3935,8 @@ textarea.form-control-lg {
   border-style: solid;
   border-color: #ff535394;
   box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+  font-weight: 900;
 }
 .blueishhover:hover, .blueishhover:focus{
   background-color: #399fff;
@@ -3950,6 +3944,8 @@ textarea.form-control-lg {
   border-style: solid;
   border-color: #53acff94;
   box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+  font-weight: 900;
 }
 .yellowishhover:hover, .yellowishhover:focus{
   background-color: #ffba39;
@@ -3957,6 +3953,8 @@ textarea.form-control-lg {
   border-style: solid;
   border-color: #ffc65c94;
   box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+  font-weight: 900;
 }
 .greenishhover:hover, .greenishhover:focus{
   background-color: #00b34a;
@@ -3964,6 +3962,8 @@ textarea.form-control-lg {
   border-style: solid;
   border-color: #2eff8594;
   box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+  font-weight: 900;
 }
 
 .redishnav{
@@ -3972,6 +3972,8 @@ textarea.form-control-lg {
   border-style: solid;
   border-color: #ff535394;
   box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+  font-weight: 900;
 }
 .blueishnav{
   background-color: #399fff;
@@ -3979,6 +3981,8 @@ textarea.form-control-lg {
   border-style: solid;
   border-color: #53acff94;
   box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+  font-weight: 900;
 }
 .yellowishnav{
   background-color: #ffba39;
@@ -3986,6 +3990,8 @@ textarea.form-control-lg {
   border-style: solid;
   border-color: #ffc65c94;
   box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+  font-weight: 900;
 }
 .greenishnav{
   background-color: #00b34a;
@@ -3993,6 +3999,8 @@ textarea.form-control-lg {
   border-style: solid;
   border-color: #2eff8594;
   box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
+
+  font-weight: 900;
 }
 
 .nav-link.disabled {
@@ -5801,9 +5809,6 @@ align-items: flex-end;
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -5903,9 +5908,6 @@ align-items: flex-end;
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;

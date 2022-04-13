@@ -12,6 +12,8 @@ var r = document.createRange();
     window.getSelection().addRange(r);
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
+
+    alert("Copied Server Address");
 }
 
 function navion() {
