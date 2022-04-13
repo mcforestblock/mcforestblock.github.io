@@ -3,6 +3,13 @@ $fbgreendark: #2BCD74;
 $black: #000000;
 $white: #ffffff;
 
+.bg-darkgreen{
+  background-color:#2BCD74;
+}
+.bg-green{
+  background-color: #35E164;
+}
+
 body, html {
     font-family: 'Oswald', sans-serif;
     scroll-behavior:smooth;
@@ -33,6 +40,7 @@ nav{
   }
 
 }
+
 @media (min-width: 576px){
   nav{
     background-image: url(images/shaders/farm.png);
@@ -52,6 +60,57 @@ nav{
       .moveup{
         position:inherit;
       }
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  .topfooter{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between !important;
+    padding: 10px 1000px;
+    .footericons{
+      a{
+        color: #209A57;
+        font-size: 20px;
+        margin: 10px;
+      }
+      a:hover{
+        color: #26B366;
+      }
+    }
+  }
+  .bottomfooter{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    .topfooter{
+      flex-direction: column;
+      display: flex;
+      padding: 10px 1000px;
+      justify-content:space-around;
+      .footericons{
+        a{
+          color: #209A57;
+          font-size: 20px;
+          margin: 10px;
+        }
+        a:hover{
+          color: #26B366;
+        }
+      }
+    }
+    .bottomfooter{
+      display: flex;
+      flex-direction: column;
     }
   }
 }
