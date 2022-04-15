@@ -37,6 +37,14 @@
         <div id="preloader"></div>
 
         <nav class="navbar no-seperate">
+            <input type="checkbox" id="check">
+            <label  for="check" class="menu" id="menu" onclick="naviconanimation(this)">
+                <div>
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+            </label>
             <div class="container-fluid">
                 <a class="nav-link greenishnav" href="#">home</a>
                 <a class="nav-link redishhover" href="#">about</a>
@@ -48,7 +56,10 @@
         <div class="mt-5 footer">
             <div class="container-fluid p-4 topfooter bg-darkgreen">
                 <div class="container ip">
-                    <a id="ip" href="#" onclick="CopyToClipboard('serverip');return false;"><h6>mc.forestblock.net</h6> <span data-playercounter-ip="forestblock.net">  0</span></a>
+                    <a id="ip" href="#" onclick="CopyToClipboard('serverip');return false;" title="Click to Copy">
+                        <h6 id="name">mc.forestblock.net</h6>
+                        <span data-playercounter-ip="forestblock.net">0</span>
+                    </a>
                 </div>
                 <div class="footericons">
                     <a href="https://discords.com/servers/forestblock"><i class="fa-brands fa-discord"></i></a>
@@ -58,8 +69,8 @@
                 </div>
             </div>
             <div class="container-fluid p-4 bottomfooter bg-green">
-                <h6 id="foot1">Forestblock, <a class="text-white" href="https://cloaksplus.com/">A Cloaks+ Project</a></h6>
-                <h6 id="foot2">We are not affiliated with or endorsed by Mojang, AB</h6>
+                <h6 id="foot1">Forestblock, <a class="" href="https://cloaksplus.com/">a Cloaks+ Project</a></h6>
+                <h6 id="foot2">We are not associated with or endorsed by Mojang, AB</h6>
             </div>
         </div>
         
