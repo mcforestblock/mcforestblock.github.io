@@ -32,23 +32,25 @@ body, html {
 }
 #check{
   display: none;
+  background-color: #000000;
 }
 .menu{
   cursor:pointer;
-  background-color: rgb(0, 0, 0);
-  padding:1px;
+  z-index: 1000000000000000000;
   div{
-    position:relative;
     span{
+      justify-content: center;
+      top: 60px;
+      left: 40px;
       background: white;
       box-shadow: 0px 2px rgba(0, 0, 0, 0.5);
-      width:100%;
+      width:40px;
       height:5px;
       border-radius: 5px;
       display: block;
       position: absolute;
       
-      transition:0.5s;
+      transition:all 0.5s;
     } 
   }
   .bar1{
@@ -62,13 +64,16 @@ body, html {
 .openmenu {
   .bar1 {transform: translate(0px, -10%) rotate(-45deg); box-shadow: 0px 0px rgba(0, 0, 0, 0.5);}
   .bar3 {transform: translate(0px, -10%) rotate(45deg); box-shadow: 0px 0px rgba(0, 0, 0, 0.5);}
-  .bar2 {width:0;}
+  .bar2 {opacity:0; transform: rotate(90deg);}
 }
 
 nav{
   background-image: url(images/shaders/farm.png);
   align-items: flex-end;
   flex-direction: column;
+  .menu{
+    display: none;
+  }
   div{
     background-color: #00000000;
     margin-top: 20px; margin-bottom: 10px;
@@ -80,7 +85,7 @@ nav{
       color: $white;
       font-weight: 900;
     }
-
+    
     .nav-link {
       display: flex;
       padding: 12px 20px;
@@ -181,21 +186,27 @@ nav{
     background-image: url(images/shaders/farm.png);
     align-items: flex-start;
     flex-direction: column;
-    div{
-      background-color: #00000000;
-      align-content: center;
-      padding: 30px;
+    transition: ease-in-out 0.5s;
+    .menu{
       display: flex;
-      flex-direction: column;
+    }
+    .navbarline{
+      background-color: #00000084;
+      padding-top:60px;
+      position: absolute;
+      top:10px;
+      display: none;
+      width: 90%;
       a {
         margin: 10px 20px;
         color: $white;
         margin-bottom: 0;
       }
+      
       .nav-link {
-        margin: 10px;
+        margin: 5px;
         display: flex;
-        padding: 12px 100%;
+        padding: 12px;
         color:white;
         text-decoration: none;
         text-shadow: 0px 2px rgba(0, 0, 0, 0.5);
@@ -204,6 +215,16 @@ nav{
         font-size:20px;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
       }
+    }
+    #check:checked ~ .navbarline{
+      display: flex;
+    }
+    div{
+      background-color: #00000000;
+      align-content: center;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -310,4 +331,3 @@ nav{
     }
   }
 }
-
