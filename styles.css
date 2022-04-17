@@ -226,6 +226,56 @@ nav div .greenishnav {
   font-weight: 900;
 }
 
+nav .ip #ip {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .ip #ip #name {
+  background-color: #3DB974;
+  padding: 10px 30px;
+  color: #359E64;
+}
+
+nav .ip #ip span {
+  color: #3DB974;
+  background-color: #60DA97;
+  text-align: center;
+  padding: 10px;
+}
+
+nav .ip #ip:hover {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .ip #ip:hover #name {
+  background-color: #47c681;
+  padding: 10px 30px;
+  color: #3eaa6f;
+  -webkit-box-shadow: #000000;
+          box-shadow: #000000;
+}
+
+nav .ip #ip:hover span {
+  color: #43c27c;
+  background-color: #6ce6a3;
+  text-align: center;
+  padding: 10px;
+}
+
 @media screen and (max-width: 576px) {
   nav {
     background-image: url(images/shaders/farm.png);

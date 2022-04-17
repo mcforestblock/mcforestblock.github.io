@@ -179,6 +179,41 @@ nav{
       font-weight: 900;
     }
   }
+  .ip{
+    #ip{
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      #name{
+        background-color: #3DB974;
+        padding: 10px 30px;
+        color: #359E64;
+      }
+      span{
+        color: #3DB974;
+        background-color: #60DA97;
+        text-align: center;
+        padding:10px;
+      }
+    }
+    #ip:hover{
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      #name{
+        background-color: #47c681;
+        padding: 10px 30px;
+        color: #3eaa6f;
+        box-shadow: #000000;
+      }
+      span{
+        color: #43c27c;
+        background-color: #6ce6a3;
+        text-align: center;
+        padding:10px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 576px){
