@@ -10,8 +10,9 @@
   background-color: #35E164;
 }
 
-body, html {
-  font-family: "Open Sans";
+body,
+html {
+  font-family: 'Poppins';
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   height: 100%;
@@ -100,10 +101,40 @@ nav .menu {
   display: none;
 }
 
+nav .co {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-shadow: 0px 2px #00000082;
+  margin-top: 100px;
+}
+
+nav .co h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #00b34a;
+}
+
+nav .co h1 strong {
+  color: #fff;
+}
+
+nav .co p {
+  font-size: 20px;
+}
+
+nav .co p strong {
+  color: #00b34a;
+  font-weight: 600;
+}
+
 nav div {
   background-color: #00000000;
-  margin-top: 20px;
-  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,6 +152,7 @@ nav div a {
 }
 
 nav div .nav-link {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,48 +174,53 @@ nav div .nav-link {
   }
 }
 
-nav div .nav-link:hover, nav div .nav-link:focus {
+nav div .nav-link:hover,
+nav div .nav-link:focus {
   color: #fff;
 }
 
-nav div .redishhover:hover, nav div .redishhover:focus {
+nav div .redishhover:hover,
+nav div .redishhover:focus {
   background-color: #ff3939;
   border-width: 1px;
   border-style: solid;
   border-color: #ff535394;
   -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-  font-weight: 900;
+  font-weight: 700;
 }
 
-nav div .blueishhover:hover, nav div .blueishhover:focus {
+nav div .blueishhover:hover,
+nav div .blueishhover:focus {
   background-color: #399fff;
   border-width: 1px;
   border-style: solid;
   border-color: #53acff94;
   -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-  font-weight: 900;
+  font-weight: 700;
 }
 
-nav div .yellowishhover:hover, nav div .yellowishhover:focus {
+nav div .yellowishhover:hover,
+nav div .yellowishhover:focus {
   background-color: #ffba39;
   border-width: 1px;
   border-style: solid;
   border-color: #ffc65c94;
   -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-  font-weight: 900;
+  font-weight: 700;
 }
 
-nav div .greenishhover:hover, nav div .greenishhover:focus {
+nav div .greenishhover:hover,
+nav div .greenishhover:focus {
   background-color: #00b34a;
   border-width: 1px;
   border-style: solid;
   border-color: #2eff8594;
   -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 nav div .redishnav {
@@ -193,7 +230,7 @@ nav div .redishnav {
   border-color: #ff535394;
   -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 nav div .blueishnav {
@@ -203,7 +240,7 @@ nav div .blueishnav {
   border-color: #53acff94;
   -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 nav div .yellowishnav {
@@ -213,7 +250,7 @@ nav div .yellowishnav {
   border-color: #ffc65c94;
   -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 nav div .greenishnav {
@@ -223,7 +260,14 @@ nav div .greenishnav {
   border-color: #2eff8594;
   -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
           box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.404);
-  font-weight: 900;
+  font-weight: 700;
+}
+
+nav .ip {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
 }
 
 nav .ip #ip {
@@ -239,41 +283,27 @@ nav .ip #ip {
 
 nav .ip #ip #name {
   background-color: #3DB974;
-  padding: 10px 30px;
   color: #359E64;
 }
 
-nav .ip #ip span {
+nav .ip #ip p {
   color: #3DB974;
   background-color: #60DA97;
   text-align: center;
-  padding: 10px;
-}
-
-nav .ip #ip:hover {
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  padding: 10px 20px;
 }
 
 nav .ip #ip:hover #name {
   background-color: #47c681;
-  padding: 10px 30px;
   color: #3eaa6f;
   -webkit-box-shadow: #000000;
           box-shadow: #000000;
 }
 
-nav .ip #ip:hover span {
+nav .ip #ip:hover p {
   color: #43c27c;
   background-color: #6ce6a3;
   text-align: center;
-  padding: 10px;
 }
 
 @media screen and (max-width: 576px) {
@@ -293,6 +323,33 @@ nav .ip #ip:hover span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  nav .co {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    text-shadow: 0px 2px #00000082;
+    margin-top: 100px;
+  }
+  nav .co h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #00b34a;
+  }
+  nav .co h1 strong {
+    color: #fff;
+  }
+  nav .co p {
+    font-size: 13px;
+  }
+  nav .co p strong {
+    color: #00b34a;
+    font-weight: 600;
   }
   nav .navbarline {
     background-color: #00000084;
@@ -339,6 +396,10 @@ nav .ip #ip:hover span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  nav .ip {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -449,10 +510,12 @@ nav .ip #ip:hover span {
 
 .footer .bottomfooter #foot1 a {
   color: #ffffffb6;
+  font-weight: 300;
 }
 
 .footer .bottomfooter #foot2 {
   color: #28A94B;
+  font-weight: 200;
 }
 
 @media screen and (max-width: 576px) {
