@@ -79,10 +79,11 @@ html {
 }
 
 nav {
-    background-image: url(images/shaders/night.png);
-    background-position: center;
+    background-image: url(images/shaders/night.png), url(images/shaders/nightblur.png);
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
     background-size: 1920px;
-    min-height: 600px;
+    min-height: 630px;
     align-items: flex-end;
     flex-direction: column;
     transition: ease-in-out 0.5s;
