@@ -19,6 +19,8 @@ html {
   margin: 0;
   color: #ffffff;
   background-color: #000000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #preloader {
@@ -91,7 +93,7 @@ nav {
   background-position: center, center;
   background-repeat: no-repeat, repeat;
   background-size: 1920px;
-  min-height: 630px;
+  min-height: 700px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -331,7 +333,7 @@ nav .ip #ip:hover #name {
             flex-direction: column;
     -webkit-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
-    min-height: 650px;
+    min-height: 750px;
   }
   nav .menu {
     display: -webkit-box;
@@ -575,6 +577,143 @@ nav .ip #ip:hover #name {
   }
   .footer .bottomfooter #foot2 {
     font-weight: 200;
+  }
+}
+
+.firstparagraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 75px;
+}
+
+.firstparagraph img {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 440px;
+  position: relative;
+}
+
+.firstparagraph div {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.firstparagraph div h1 {
+  text-align: left;
+}
+
+.firstparagraph div p {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 90%;
+}
+
+.firstparagraph div p strong {
+  color: #00b34a;
+  text-align: left;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 950px) {
+  .firstparagraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 75px;
+  }
+  .firstparagraph img {
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 440px;
+    position: relative;
+  }
+  .firstparagraph div {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .firstparagraph div h1 {
+    text-align: center;
+  }
+  .firstparagraph div p {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 90%;
+    text-align: center;
+  }
+  .firstparagraph div p strong {
+    color: #00b34a;
+    text-align: left;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 576px) and (max-width: 950px) {
+  .firstparagraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+  }
+  .firstparagraph img {
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 90%;
+    position: relative;
+  }
+  .firstparagraph div {
+    margin-top: 30px;
+  }
+  .firstparagraph div h1 {
+    text-align: center;
+  }
+  .firstparagraph div p {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 90%;
+    text-align: center;
+    margin: 0;
+  }
+  .firstparagraph div p strong {
+    color: #00b34a;
+    text-align: left;
+    font-weight: 500;
   }
 }
 /*# sourceMappingURL=styles.css.map */
