@@ -12,7 +12,7 @@
 
 body,
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   height: 100%;
@@ -133,7 +133,7 @@ nav .co p {
 
 nav .co p strong {
   color: #00b34a;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 nav div {
@@ -292,6 +292,7 @@ nav .ip #ip #name {
   -webkit-box-shadow: 0px 5px #35A266;
           box-shadow: 0px 5px #35A266;
   border: 1px solid #9EDCBA;
+  font-weight: 600;
 }
 
 nav .ip #ip #name::before {
@@ -329,6 +330,7 @@ nav .ip #ip:hover #name {
             flex-direction: column;
     -webkit-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
+    min-height: 650px;
   }
   nav .menu {
     display: -webkit-box;
@@ -336,6 +338,9 @@ nav .ip #ip:hover #name {
     display: flex;
   }
   nav .co {
+    z-index: 10;
+    position: absolute;
+    top: 230px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -345,7 +350,7 @@ nav .ip #ip:hover #name {
             flex-direction: column;
     text-align: center;
     text-shadow: 0px 2px #00000082;
-    margin-top: 125px;
+    margin-top: 0px;
   }
   nav .co h1 {
     font-size: 40px;
@@ -360,13 +365,14 @@ nav .ip #ip:hover #name {
   }
   nav .co p strong {
     color: #00b34a;
-    font-weight: 600;
+    font-weight: 800;
   }
   nav .navbarline {
     background-color: #00000084;
     padding-top: 60px;
     position: absolute;
-    top: 25px;
+    top: 30px;
+    z-index: 1000;
     display: none;
     width: 90%;
   }
@@ -400,8 +406,9 @@ nav .ip #ip:hover #name {
             flex-direction: column;
   }
   nav .ip {
-    margin-top: 0px;
     margin-bottom: 0px;
+    position: absolute;
+    top: 330px;
   }
 }
 

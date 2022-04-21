@@ -16,7 +16,7 @@ $white: #ffffff;
 
 body,
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     height: 100%;
@@ -107,7 +107,7 @@ nav {
             font-size: 20px;
             strong {
                 color: #00b34a;
-                font-weight: 600;
+                font-weight: 800;
             }
         }
     }
@@ -225,6 +225,7 @@ nav {
                 padding: 10px 20px;
                 box-shadow: 0px 5px #35A266;
                 border: 1px solid #9EDCBA;
+                font-weight: 600;
             }
             #name::before {
                 content: "Copied to Clipboard";
@@ -256,15 +257,19 @@ nav {
         align-items: flex-start;
         flex-direction: column;
         transition: ease-in-out 0.5s;
+        min-height: 650px;
         .menu {
             display: flex;
         }
         .co {
+            z-index: 10;
+            position: absolute;
+            top: 230px;
             display: flex;
             flex-direction: column;
             text-align: center;
             text-shadow: 0px 2px #00000082;
-            margin-top: 125px;
+            margin-top: 0px;
             h1 {
                 font-size: 40px;
                 font-weight: 800;
@@ -277,7 +282,7 @@ nav {
                 font-size: 15px;
                 strong {
                     color: #00b34a;
-                    font-weight: 600;
+                    font-weight: 800;
                 }
             }
         }
@@ -285,7 +290,8 @@ nav {
             background-color: #00000084;
             padding-top: 60px;
             position: absolute;
-            top: 25px;
+            top: 30px;
+            z-index: 1000;
             display: none;
             width: 90%;
             a {
@@ -311,8 +317,9 @@ nav {
             flex-direction: column;
         }
         .ip {
-            margin-top: 0px;
             margin-bottom: 0px;
+            position: absolute;
+            top: 330px;
         }
     }
 }
