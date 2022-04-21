@@ -4,35 +4,6 @@ window.addEventListener("load", function() {
 })
 
 
-// function CopyToClipboard(id) {
-//     var r = document.createRange();
-//     r.selectNode(document.getElementById(id));
-//     window.getSelection().removeAllRanges();
-//     window.getSelection().addRange(r);
-//     document.execCommand('copy');
-//     window.getSelection().removeAllRanges();
-
-//     alert("Copied Server Address");
-// }
-
-// function myFunction() {
-//     var copyText = document.getElementById("serverip");
-
-//     navigator.clipboard(copyText.value);
-
-//     var tooltip = document.getElementById("myTooltip");
-//     tooltip.innerHTML = "Copied to Clipboard";
-// }
-
-function copyToClipboard(text) {
-    const elem = document.createElement('mc.forestblock.net');
-    elem.value = text;
-    document.body.appendChild(elem);
-    elem.select();
-    document.execCommand('copy');
-    document.body.removeChild(elem);
-}
-
 function outFunc() {
     var tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Click to Copy";
