@@ -440,13 +440,6 @@ nav .ip #ip:hover #name {
 
 .footer .topfooter .ip #ip {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .footer .topfooter .ip #ip #name {
@@ -455,35 +448,13 @@ nav .ip #ip:hover #name {
   color: #359E64;
 }
 
-.footer .topfooter .ip #ip span {
-  color: #3DB974;
-  background-color: #60DA97;
-  text-align: center;
-  padding: 10px;
-}
-
 .footer .topfooter .ip #ip:hover {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .footer .topfooter .ip #ip:hover #name {
   background-color: #47c681;
-  padding: 10px 30px;
   color: #3eaa6f;
-}
-
-.footer .topfooter .ip #ip:hover span {
-  color: #43c27c;
-  background-color: #6ce6a3;
-  text-align: center;
-  padding: 10px;
 }
 
 .footer .topfooter .footericons {
