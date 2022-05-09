@@ -26,11 +26,31 @@ html {
     transition: all 0.5s;
 }
 
-#preloader {
-    background: $black url(images/logo/loading.gif) no-repeat center center;
-    background-size: 30%;
+.loader {
+    border: 16px solid $fbgreen;
+    /* Light grey */
+    border-top: 16px solid $fbgreendark;
+    border-bottom: 16px solid $fbgreendark;
+    /* Blue */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
     position: absolute;
-    z-index: 100;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    background-color: #000000;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 #check {
@@ -512,4 +532,138 @@ nav {
             }
         }
     }
+    .recentNews {
+        margin-top: 100px;
+    }
 }
+
+Edit in JSFiddle Result JavaScript HTML CSS .recentNews {
+    background-color: rgb(20, 117, 175)
+}
+
+.recentNews {
+    background-color: #000000;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .ct-blog {
+            margin-bottom: 30px;
+        }
+    }
+    .news-title {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        p {
+            font-size: 19px;
+            opacity: 80%;
+        }
+    }
+    .ct-blog {
+        .inner {
+            background-color: rgb(50, 49, 57);
+            padding: 10px;
+            padding-bottom: 0px;
+            transition: all 0.2s ease-in-out 0s;
+            cursor: pointer;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .inner:hover {
+            background-color: #2c2c2c;
+            border: 2px solid #00b34a;
+        }
+        .fauxcrop {
+            height: 180px;
+            overflow: hidden;
+        }
+        .fauxcrop a img {
+            border-radius: 15px 15px 0px 0px;
+            width: 100%;
+        }
+        .fauxcrop a img:hover {
+            border-bottom: 2px solid $fbgreen;
+        }
+    }
+}
+
+.ct-blog-content {
+    display: table;
+    padding: 30px 0 28px;
+    .ct-blog-date {
+        border-right: 1px solid #95A5A6;
+        display: table-cell;
+        padding: 0px 18px 0px 15px;
+        text-align: center;
+    }
+    .ct-blog-date {
+        span {
+            font-size: 16px;
+            color: $fbgreen;
+            font-weight: 700;
+            display: block;
+            line-height: 1;
+        }
+        strong {
+            font-size: 10px;
+            color: $fbgreendark;
+        }
+    }
+    .ct-blog-header {
+        display: table-cell;
+        p {
+            margin-bottom: 0px;
+            font-size: 10px;
+            color: $fbgreen;
+            font-weight: 700;
+        }
+        h3 {
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            vertical-align: top;
+        }
+    }
+}
+
+.btn-news {
+    color: rgb(83, 83, 83);
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.btn-news.btn-contests {
+    a {
+        color: #fff;
+        font-size: 15px;
+        transition: all 0.2s ease-in-out 0s;
+        background-color: #3DB974;
+        color: #ffffffde;
+        padding: 10px 20px;
+        box-shadow: 0px 5px #35A266;
+        border: 1px solid #9EDCBA;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(216, 216, 216);
+        padding: 12px 24px;
+        font-size: 20px;
+    }
+}
+
+// @media screen and (max-width: 1204px) {
+//     .row {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+// }

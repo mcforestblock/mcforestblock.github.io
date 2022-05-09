@@ -19,7 +19,7 @@
 
     <title>Welcome to Forestblock</title>
     <meta content="Welcome to Forestblock" property="og:title" />
-    <meta content="The Hardest RPG Server" property="og:description" />
+    <meta content="The  RPG Server" property="og:description" />
     <meta content="https://forestblock.net" property="og:url" />
     <meta content="images/banners/serverinvite.png" property="og:image" />
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
@@ -35,11 +35,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <script src="https://kit.fontawesome.com/0f2bdeb886.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 </head>
 
-<body>
-    <a class="serverip" id="serverip" value="mc.forestblock.net">mc.forestblock.net</a>
-    <div id="preloader"></div>
+<body onload="load()" style="margin:0;">
 
     <nav class="navbar no-seperate">
         <input type="checkbox" id="check">
@@ -51,8 +52,8 @@
                 </div>
             </label>
         <div class="navbarline">
-            <a class="nav-link greenishnav" href="#">home</a>
-            <a class="nav-link redishhover" href="#">about</a>
+            <a class="nav-link greenishnav" href="index">home</a>
+            <a class="nav-link redishhover" href="about">about</a>
             <a class="nav-link blueishhover" href="#">shop</a>
             <a class="nav-link yellowishhover" href="#">map</a>
         </div>
@@ -63,22 +64,89 @@
                 <p>
         </div>
         <div class="ip">
-            <a id="ip" href="#" onclick="copyToClipboard()" title="Click to Copy">
+            <a id="ip" onclick="copyToClipboard('mc.forestblock.net')" title="Click to Copy" style="cursor:pointer;">
                 <h6 id="name">mc.forestblock.net</h6>
-                <!-- <p id="cliptext">click to copy</p> -->
+                <p id="cliptext">click to copy</p>
             </a>
         </div>
     </nav>
-    <div class="firstparagraph">
-        <img src="images/shaders/Dawn.png" style="border: 2px solid rgb(255, 255, 255);">
-        <div class="container">
-            <h1 style="font-weight: 700; font-size: 30px;">What is Forestblock?</h1>
-            <p class="m">Forestblock is considered as one of the most <strong>challenging and skilled-based</strong> Minecraft <strong>Java</strong> server in history. We're departing from the Minecraft Vanilla experience by using a <strong>completely different storytelling
+    <!-- <div class="loader"></div> -->
+    <div class="container" id="body">
+        <div class="firstparagraph">
+            <img src="images/shaders/morninglawnhouse.png" style="border: 2px solid rgb(255, 255, 255);">
+            <div class="container">
+                <h1 style="font-weight: 700; font-size: 30px;">What is Forestblock?</h1>
+                <p class="m">Forestblock is considered as one of the most <strong>challenging and skilled-based</strong> Minecraft <strong>Java</strong> server in history. We're departing from the Minecraft Vanilla experience by using a <strong>completely different storytelling
                 style</strong>. Each player is assigned a <strong>class</strong>; whether you're a mage with strong magical potency and a vast attack range, or a warrior who prefers close-combat battles, we support a
-                <strong>wide range of playing styles</strong>. All of these elements include the importation of a wide range of <strong>unique weapons</strong>, <strong>equipment</strong>, and <strong>items</strong> to aid in the coming battles.</p>
+                    <strong>wide range of playing styles</strong>. All of these elements include the importation of a wide range of <strong>unique weapons</strong>, <strong>equipment</strong>, and <strong>items</strong> to aid in the coming battles.</p>
+            </div>
         </div>
 
+        <section class="recentNews">
+            <div class="container">
+                <h2 class="news-title">
+                    Forestblock Newsletter
+                    <p>Stay up to date with the latest news</p>
+                </h2>
+                <div class="row container" id="news1">
+                    <div class="ct-blog col-sm-6 col-md-4">
+                        <div class="inner">
+                            <div class="fauxcrop">
+                                <a id="link1"><img id="header1" alt="News Entry" src=""></a>
+                            </div>
+                            <div class="ct-blog-content">
+                                <div class="ct-blog-date">
+                                    <span id="month1"></span><strong id="date1"></strong>
+                                </div>
+                                <div class="ct-blog-header">
+                                    <p id="mini1"></p>
+                                    <h3 id="title1"></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ct-blog col-sm-6 col-md-4">
+                        <div class="inner">
+                            <div class="fauxcrop">
+                                <a id="link2"><img id="header2" alt="News Entry" src=""></a>
+                            </div>
+                            <div class="ct-blog-content">
+                                <div class="ct-blog-date">
+                                    <span id="month2"></span><strong id="date2"></strong>
+                                </div>
+                                <div class="ct-blog-header">
+                                    <p id="mini2"></p>
+                                    <h3 id="title2"></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ct-blog col-sm-6 col-md-4">
+                        <div class="inner">
+                            <div class="fauxcrop">
+                                <a id="link3"><img id="header3" alt="News Entry" src=""></a>
+                            </div>
+                            <div class="ct-blog-content">
+                                <div class="ct-blog-date">
+                                    <span id="month3"></span><strong id="date3"></strong>
+                                </div>
+                                <div class="ct-blog-header">
+                                    <p id="mini3"></p>
+                                    <h3 id="title3"></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-news btn-contests">
+                    <a href="#">VIEW ALL NEWS</a>
+                </div>
+            </div>
+        </section>
     </div>
+    <section class="start-adventure">
+
+    </section>
 
     <div class="mt-5 footer">
         <div class="container-fluid p-4 topfooter bg-darkgreen">
@@ -109,9 +177,9 @@
             menu.classList.toggle("openmenu")
         }
     </script>
-    <script src="js/bootstrap.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <script src="js-basics/copy.js"></script>
+    <script src="js-basics/news.js"></script>
+    <!-- <script src="js-basics/loader.js"></script> -->
 </body>
 
 </html>
