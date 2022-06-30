@@ -25,7 +25,7 @@
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="/basic-css/stylesabout.css" />
     <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,21 +57,60 @@
             <a class="nav-link yellowishhover" href="#">map</a>
         </div>
         <div class="co">
-            <h1><strong>Forestblock</strong>.net</h1>
-            <p>The
+            <h1><strong>About Forestblock</strong>.net</h1>
+            <p>What makes Forestblock the
                 <strong>#1 skill-based MMORPG</strong> minecraft server
                 <p>
-        </div>
-        <div class="ip">
-            <a id="ip" href="#" onclick="copyToClipboard()" title="Click to Copy">
-                <h6 id="name">mc.forestblock.net</h6>
-                <!-- <p id="cliptext">click to copy</p> -->
-            </a>
         </div>
     </nav>
 
     <div class="container-fluid">
-
+        <div class="carousel" data-carousel>
+            <button class="carousel__button carousel__button--left" data-carousel-button="prev"><i class="fa-solid fa-chevron-left" alt=">"></i></button>
+            <div class="carousel__track-container" data-carouselContainer>
+                <ul class="carousel__track" data-slides>
+                    <li class="carousel__slide" data-active>
+                        <div class="carousel_text" data-carousel-text="henta">
+                            <h3 data-carousel-info="name"></h3>
+                            <h6 data-carousel-info="title"></h6>
+                            <p data-carousel-info="paragraph"></p>
+                        </div>
+                        <img data-carousel-image="henta" src="">
+                    </li>
+                    <li class="carousel__slide">
+                        <div class="carousel_text" data-carousel-text="nubb">
+                            <h3>Nubb</h3>
+                            <h6>Creative Director & Web Developer</h6>
+                            <p></p>
+                        </div>
+                        <img data-carousel-image="nubb" src="">
+                    </li>
+                    <li class="carousel__slide">
+                        <div class="carousel_text" data-carousel-text="jonathan">
+                            <h3>Jonathan</h3>
+                            <h6>Project Engineer & Game Master</h6>
+                            <p></p>
+                        </div>
+                        <img data-carousel-image="jonathan" src="">
+                    </li>
+                    <li class="carousel__slide">
+                        <div class="carousel_text" data-carousel-text="jinchae">
+                            <h3>Jinchae</h3>
+                            <h6>Community Manager & HR coordinator</h6>
+                            <p></p>
+                        </div>
+                        <img data-carousel-image="jinchae" src="">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right" data-carousel-button="next"><i class="fa-solid fa-angle-right" alt=">"></i></button>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
     </div>
 
     <div class="mt-5 footer">
@@ -104,8 +143,7 @@
         }
     </script>
     <script src="js/bootstrap.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <script src="basics-js/carousel.js"></script>
 </body>
 
 </html>

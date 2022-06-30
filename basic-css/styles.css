@@ -123,7 +123,7 @@ html {
 }
 
 nav {
-  background-image: url(images/shaders/night.png), url(images/shaders/nightblur.png);
+  background-image: url(../images/shaders/night.png), url(../images/shaders/nightblur.png);
   background-position: center, center;
   background-repeat: no-repeat, repeat;
   background-size: 1920px;
@@ -624,6 +624,7 @@ nav .ip #ip:hover #name {
   font-weight: 400;
   font-size: 12px;
   opacity: 90%;
+  text-align: justify;
 }
 
 .firstparagraph div p strong {
@@ -668,7 +669,7 @@ nav .ip #ip:hover #name {
     font-weight: 400;
     font-size: 12px;
     opacity: 90%;
-    text-align: center;
+    text-align: justify;
   }
   .firstparagraph div p strong {
     color: #00b34a;
@@ -809,7 +810,7 @@ Edit in JSFiddle Result JavaScript HTML CSS .recentNews {
 }
 
 .ct-blog-content .ct-blog-date span {
-  font-size: 16px;
+  font-size: 12px;
   color: #35E164;
   font-weight: 700;
   display: block;
@@ -834,7 +835,7 @@ Edit in JSFiddle Result JavaScript HTML CSS .recentNews {
 
 .ct-blog-content .ct-blog-header h3 {
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: -0.2px;
   vertical-align: top;

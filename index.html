@@ -25,7 +25,7 @@
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="basic-css/styles.css" />
     <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,7 +151,7 @@
     <div class="mt-5 footer">
         <div class="container-fluid p-4 topfooter bg-darkgreen">
             <div class="ip">
-                <a id="ip" href="#" onclick="CopyToClipboard('serverip');return false;" title="Click to Copy">
+                <a id="ip" href="#" onclick="copyToClipboard('mc.forestblock.net');return false;" title="Click to Copy">
                     <h6 id="name">mc.forestblock.net</h6>
                     <!-- <span data-playercounter-ip="forestblock.net">0</span> -->
                 </a>
@@ -177,9 +177,9 @@
             menu.classList.toggle("openmenu")
         }
     </script>
-    <script src="js-basics/copy.js"></script>
-    <script src="js-basics/news.js"></script>
-    <!-- <script src="js-basics/loader.js"></script> -->
+    <script src="basics-js/copy.js"></script>
+    <script src="basics-js/news.js"></script>
+    <script src="js-basics/loader.js"></script>
 </body>
 
 </html>

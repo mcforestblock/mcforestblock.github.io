@@ -100,11 +100,11 @@ html {
 }
 
 nav {
-    background-image: url(images/shaders/night.png), url(images/shaders/nightblur.png);
-    background-position: center, center;
+    background-image: url(../images/shaders/night.png), url(../images/shaders/nightblur.png);
+    background-position: bottom, center;
     background-repeat: no-repeat, repeat;
     background-size: 1920px;
-    min-height: 700px;
+    min-height: 200px;
     align-items: flex-end;
     flex-direction: column;
     transition: ease-in-out 0.5s;
@@ -116,7 +116,7 @@ nav {
         flex-direction: column;
         text-align: center;
         text-shadow: 0px 2px #00000082;
-        margin-top: 100px;
+        margin-top: 0px;
         h1 {
             font-size: 50px;
             font-weight: 800;
@@ -126,7 +126,7 @@ nav {
             }
         }
         p {
-            font-size: 20px;
+            font-size: 16px;
             strong {
                 color: #00b34a;
                 font-weight: 800;
@@ -138,7 +138,6 @@ nav {
         display: flex;
         flex-direction: row;
         a {
-            margin: 10px;
             padding: 10px 100%;
             color: $white;
             font-weight: 900;
@@ -433,237 +432,67 @@ nav {
     }
 }
 
-.firstparagraph {
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 75px;
-    img {
-        transition-timing-function: ease-in-out;
-        transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-        align-self: center;
-        width: 440px;
-        position: relative;
-    }
-    div {
-        h1 {
-            text-align: left;
-        }
-        margin-left: 10px;
-        margin-top: 10px;
-        p {
-            font-weight: 400;
-            font-size: 12px;
-            opacity: 90%;
-            strong {
-                color: #00b34a;
-                text-align: left;
-                font-weight: 500;
-            }
+    flex-direction: column;
+    .carousel__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: 0;
+        i {
+            color: white;
+            font-size: 30px;
+            text-shadow: 0px 3px rgba(100, 255, 165, 0.47);
         }
     }
-}
-
-@media screen and (max-width: 950px) {
-    .firstparagraph {
+    .carousel__button--left {
+        left: 30px;
+    }
+    .carousel__button--right {
+        right: 30px
+    }
+    .carousel__nav {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        padding: 75px;
-        img {
-            transition-timing-function: ease-in-out;
-            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-            align-self: center;
-            width: 440px;
-            position: relative;
-        }
-        div {
-            margin-left: 0px;
-            margin-top: 30px;
-            h1 {
-                text-align: center;
-            }
-            p {
-                font-weight: 400;
-                font-size: 12px;
-                opacity: 90%;
-                text-align: center;
-                strong {
-                    color: #00b34a;
-                    text-align: left;
-                    font-weight: 500;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 576px) {
-    @media screen and (max-width: 950px) {
-        .firstparagraph {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0px;
-            img {
-                transition-timing-function: ease-in-out;
-                transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-                align-self: center;
-                width: 90%;
-                position: relative;
-            }
-            div {
-                margin-top: 30px;
-                h1 {
-                    text-align: center;
-                }
-                p {
-                    font-weight: 400;
-                    font-size: 12px;
-                    opacity: 90%;
-                    text-align: center;
-                    margin: 0;
-                    strong {
-                        color: #00b34a;
-                        text-align: left;
-                        font-weight: 500;
-                    }
-                }
-            }
-        }
-    }
-    .recentNews {
-        margin-top: 100px;
-    }
-}
-
-Edit in JSFiddle Result JavaScript HTML CSS .recentNews {
-    background-color: rgb(20, 117, 175)
-}
-
-.recentNews {
-    background-color: #000000;
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 30px;
-        .ct-blog {
-            margin-bottom: 30px;
-        }
-    }
-    .news-title {
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 50px;
-        font-size: 30px;
-        font-weight: bold;
-        color: #fff;
-        p {
-            font-size: 19px;
-            opacity: 80%;
-        }
-    }
-    .ct-blog {
-        .inner {
-            background-color: rgb(50, 49, 57);
-            padding: 10px;
-            padding-bottom: 0px;
-            transition: all 0.2s ease-in-out 0s;
+        padding: 10px 0;
+        margin: 5px 5px;
+        .carousel__indicator {
+            border: 0;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 5px 5px;
             cursor: pointer;
-            height: 100%;
-            border-radius: 20px;
         }
-        .inner:hover {
-            background-color: #2c2c2c;
-            border: 2px solid #00b34a;
+        .carousel__indicator.current-slide {
+            background-color: rgba(70, 255, 153, 0.75);
         }
-        .fauxcrop {
-            height: 180px;
-            overflow: hidden;
-        }
-        .fauxcrop a img {
-            border-radius: 15px 15px 0px 0px;
-            width: 100%;
-        }
-        .fauxcrop a img:hover {
-            border-bottom: 2px solid $fbgreen;
+    }
+    .carousel__track-container {
+        height: 100%;
+        .carousel__track {
+            padding: 0;
+            margin: 0;
+            margin-left: 100px;
+            list-style: none;
+            .carousel__slide {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 60%;
+                opacity: 0;
+                transition: 500ms all ease-in-out;
+            }
+            .carousel__slide[data-active] {
+                opacity: 1;
+                transition-delay: 0ms;
+            }
         }
     }
 }
-
-.ct-blog-content {
-    display: table;
-    padding: 30px 0 28px;
-    .ct-blog-date {
-        border-right: 1px solid #95A5A6;
-        display: table-cell;
-        padding: 0px 18px 0px 15px;
-        text-align: center;
-    }
-    .ct-blog-date {
-        span {
-            font-size: 16px;
-            color: $fbgreen;
-            font-weight: 700;
-            display: block;
-            line-height: 1;
-        }
-        strong {
-            font-size: 10px;
-            color: $fbgreendark;
-        }
-    }
-    .ct-blog-header {
-        display: table-cell;
-        p {
-            margin-bottom: 0px;
-            font-size: 10px;
-            color: $fbgreen;
-            font-weight: 700;
-        }
-        h3 {
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: -0.2px;
-            vertical-align: top;
-        }
-    }
-}
-
-.btn-news {
-    color: rgb(83, 83, 83);
-    font-size: 14px;
-    font-weight: bold;
-    padding-bottom: 0px;
-    text-align: center;
-}
-
-.btn-news.btn-contests {
-    a {
-        color: #fff;
-        font-size: 15px;
-        transition: all 0.2s ease-in-out 0s;
-        background-color: #3DB974;
-        color: #ffffffde;
-        padding: 10px 20px;
-        box-shadow: 0px 5px #35A266;
-        border: 1px solid #9EDCBA;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    a:hover {
-        color: rgb(216, 216, 216);
-        padding: 12px 24px;
-        font-size: 20px;
-    }
-}
-
-// @media screen and (max-width: 1204px) {
-//     .row {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//     }
-// }

@@ -8,7 +8,7 @@ function news(image, date, month, miniText, bigText, link) {
 }
 
 const news1 = new news("images/shaders/farm.png", "17, 2022", "March", "Development: Upcoming 0.3 Update", "Forestblock Ultimate Restart", "#");
-const news2 = new news("images/news/weppartnership.png", "30, 2021", "Sept", "Announcement: Community", "Official Partnership & Affiliation with Wepwawet Hosting", "");
+const news2 = new news("images/news/weppartnership.png", "30, 2021", "September", "Announcement: Community", "Official Partnership & Affiliation with Wepwawet Hosting", "");
 const news3 = new news("images/news/fblaunch.png", "25, 2021", "August", "Release: Alpha Launch", "Forestblock Official Alpha Launch", "");
 
 document.getElementById('month1').innerHTML = news1.month;
